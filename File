@@ -1,0 +1,11 @@
+function convertBinary(text) {
+    let binary = [];
+    for (let i = 0; i < text.length; i++) {
+        let bin = "0" + text[i].charCodeAt().toString(2) + " ";
+        binary += bin;
+    }
+    console.log(binary);
+}
+
+let text = prompt("Masukkan Tetx yang mau di Convert menjadi binary : ");
+convertBinary(text);
