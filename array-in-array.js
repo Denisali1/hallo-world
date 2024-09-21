@@ -1,14 +1,7 @@
 function multiplicationTable(size){
-    let table= [];
-     
-    for(let i=1; i<=size; i++){
-        let row=[];
-
-        for(let j=1; j<=size; j++){
-            row.push(i*j);
-        }
-        table.push(row);
-    }
-    return table;
+    return Array.from({length: size},(v,i)=>Array.from({length:size},(v,j)=>(i+1)*(j+1))) ;
 }
-console.log(multiplicationTable(4));
+console.log(multiplicationTable(3));
+
+// const string = Array.from(`hallo World`); contoh lain Array.from();
+// console.log(string);                         
